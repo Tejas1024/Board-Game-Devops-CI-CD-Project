@@ -1,6 +1,6 @@
 # Complete DevOps CI/CD Project - Board Game Application
 
-## 🚀 Project Status: Phase 5 Completed
+## 🚀 Project Status: Phase 6 Completed
 
 This repository documents my journey building a complete DevOps CI/CD pipeline from scratch as a beginner.
 
@@ -102,7 +102,7 @@ Building an end-to-end DevOps pipeline for a Board Game Database application wit
 
 ---
 
-### Phase 5: Jenkins CI/CD Server Configuration ✨ **JUST COMPLETED**
+### Phase 5: Jenkins CI/CD Server Configuration
 **Objective**: Set up Jenkins for continuous integration and deployment
 
 **Key Accomplishments:**
@@ -128,30 +128,78 @@ Building an end-to-end DevOps pipeline for a Board Game Database application wit
 
 ---
 
-## 📸 Screenshots - Phase 5
+### Phase 6: Jenkins Plugins and Tools Configuration ✨ **JUST COMPLETED**
+**Objective**: Configure Jenkins with essential build tools and plugins
 
-### Screenshot 1: Jenkins Service Running
-![Jenkins Service Status](screenshots/jenkins-service-status.png)
-*Jenkins service successfully installed and running on Ubuntu server*
+**Key Accomplishments:**
+- Accessed Jenkins Plugin Manager successfully
+- Installed Maven Integration plugin for build automation
+- Installed Eclipse Temurin installer plugin for JDK management
+- Installed SonarQube Scanner plugin for code quality integration
+- Configured Jenkins to automatically restart after plugin installation
+- Set up JDK 17 (OpenJDK) with automatic installation from Adoptium
+- Configured SonarQube Scanner with latest version from Maven Central
+- Configured Maven 3.x with automatic installation from Apache
+- Verified all tool configurations in Global Tool Configuration
+- Created and executed test job to validate tool installations
+- Confirmed Java and Maven are correctly installed and accessible
 
-### Screenshot 2: Jenkins Unlock Page
-![Jenkins Unlock](screenshots/jenkins-unlock-page.png)
-*Initial Jenkins setup page requesting administrator password*
+**Skills Learned:**
+- Jenkins plugin ecosystem and management
+- Global Tool Configuration in Jenkins
+- Automatic tool installation and versioning
+- JDK configuration and management in CI/CD
+- Maven integration with Jenkins
+- SonarQube scanner setup
+- Creating and testing Jenkins freestyle jobs
+- Reading and interpreting Jenkins console output
+- Build environment configuration
 
-### Screenshot 3: Jenkins Dashboard
-![Jenkins Dashboard](screenshots/jenkins-dashboard.png)
-*Jenkins successfully configured and ready for pipeline creation*
+**Technical Details:**
+- **JDK Version**: OpenJDK 17 (latest from Adoptium)
+- **Maven Version**: 3.9.x (latest stable)
+- **SonarQube Scanner**: Latest from Maven Central
+- **Installation Method**: Automatic download and installation
+- **Tool Names** (for pipeline reference):
+  - JDK: `jdk-17`
+  - Maven: `maven`
+  - SonarQube Scanner: `sonarqube-scanner`
 
 ---
 
-## 🛠️ Technical Architecture (So Far)
+## 📸 Screenshots - Phase 6
+
+### Screenshot 1: Plugins Selected for Installation
+![Plugins Selected](screenshots/phase6-plugins-selected.png)
+*Maven Integration, Eclipse Temurin, and SonarQube Scanner plugins selected for installation*
+
+### Screenshot 2: Plugin Installation Success
+![Plugin Installation](screenshots/phase6-plugins-installed.png)
+*All three plugins successfully downloaded and installed with Jenkins restart*
+
+### Screenshot 3: Tools Configuration Page
+![Tools Configuration](screenshots/phase6-tools-configured.png)
+*JDK 17, SonarQube Scanner, and Maven configured with automatic installation*
+
+### Screenshot 4: Tool Installation Verification
+![Tool Verification](screenshots/phase6-tools-verified.png)
+*Console output showing successful Java and Maven version detection*
+
+---
+
+## 🛠️ Technical Architecture (Current State)
 
 ```
 GitHub Repository (Source Code)
          ↓
-    [JENKINS] ← Phase 5 Complete
+    [JENKINS] ← Phase 6 Complete (Plugins & Tools Configured)
          ↓
-   Build & Test
+   Tools Available:
+   - JDK 17 ← Phase 6
+   - Maven 3.x ← Phase 6
+   - SonarQube Scanner ← Phase 6
+         ↓
+   Build & Test (Maven)
          ↓
     [SONARQUBE] ← Phase 3 Complete (Code Quality)
          ↓
@@ -170,103 +218,136 @@ GitHub Repository (Source Code)
 
 ---
 
+## 🎯 What's Working Now
+
+### Jenkins Build Environment Ready
+- ✅ Java 17 (OpenJDK) automatically available
+- ✅ Maven for compiling and packaging Java projects
+- ✅ SonarQube Scanner for code quality analysis
+- ✅ Plugins installed for enhanced functionality
+- ✅ Tools configured for automatic installation
+
+### Ready for Next Phase
+With tools configured, we can now:
+- Create Jenkins pipelines with proper tool declarations
+- Compile Java code using Maven
+- Run tests with Maven
+- Analyze code quality with SonarQube
+- Package applications as JAR/WAR files
+
+---
+
 ## 🎯 Next Steps
 
 ### Upcoming Phases:
-- **Phase 6**: Install Jenkins plugins (Maven, SonarQube Scanner, Eclipse Temurin)
-- **Phase 7**: Create first Jenkins pipeline
-- **Phase 8**: Integrate SonarQube with Jenkins
-- **Phase 9**: Add Trivy security scanning
-- **Phase 10-13**: Package and deploy to Nexus
-- **Phase 14-16**: Docker image creation and pushing
-- **Phase 17-20**: Kubernetes (EKS) deployment
-- **Phase 21**: Email notifications and webhooks
+- **Phase 7**: Create Jenkins Pipeline (compile, test stages)
+- **Phase 8**: Configure SonarQube integration with Jenkins
+- **Phase 9**: Add Trivy security scanning to pipeline
+- **Phase 10-13**: Package and deploy artifacts to Nexus
+- **Phase 14-16**: Docker image creation and registry push
+- **Phase 17-20**: Kubernetes (EKS) cluster deployment
+- **Phase 21**: Email notifications and GitHub webhooks
 - **Phase 22-25**: Monitoring with Prometheus and Grafana
 
 ---
 
 ## 💡 Key Learnings as a Beginner
 
-### What I've Learned So Far:
+### What I've Learned in Phase 6:
 
-1. **Infrastructure as Code (IaC)**
-   - How to provision cloud resources programmatically
-   - Benefits of automated infrastructure over manual setup
-   - Version control for infrastructure configurations
+1. **Jenkins Plugin Ecosystem**
+   - Jenkins extends functionality through plugins
+   - Some plugins are pre-installed, others need manual installation
+   - Plugin dependencies are automatically resolved
+   - Plugins can be installed in batches for efficiency
 
-2. **Configuration Management**
-   - Automation saves time and reduces errors
-   - Ansible makes server configuration repeatable
-   - Inventory files for managing multiple servers
+2. **Tool Configuration in Jenkins**
+   - Global Tool Configuration applies to all jobs
+   - Tools can be automatically downloaded and installed
+   - Tool names are referenced in pipeline scripts
+   - Version management is handled by Jenkins
 
-3. **Containerization**
-   - Docker simplifies application deployment
-   - Container isolation and portability
-   - Image vs Container concepts
+3. **Build Tool Integration**
+   - Maven is the standard Java build tool
+   - JDK version must match project requirements
+   - SonarQube Scanner integrates code quality checks
+   - Tools are downloaded on first use to save space
 
-4. **CI/CD Fundamentals**
-   - Jenkins as the automation hub
-   - Importance of automated testing
-   - Pipeline-as-code approach
-
-5. **Cloud Services (AWS)**
-   - EC2 instance management
-   - Security groups and network configuration
-   - IAM for secure access management
+4. **Jenkins Best Practices**
+   - Test configurations before using in production
+   - Use consistent naming conventions for tools
+   - Verify installations through test jobs
+   - Document tool versions for reproducibility
 
 ### Challenges Overcome:
-- Understanding Terraform syntax for the first time
-- Configuring SSH keys for secure communication
-- Managing Docker permissions across different servers
-- Navigating AWS console and services
-- Writing and debugging Bash scripts
+- Understanding the difference between plugins and tools
+- Finding the correct plugin names in the marketplace
+- Configuring automatic installation correctly
+- Verifying tool installation without a full pipeline
+- Learning to read Jenkins console output
 
 ---
 
 ## 📚 Resources Used
 
-- [AWS Documentation](https://docs.aws.amazon.com/)
-- [Terraform Documentation](https://www.terraform.io/docs)
-- [Ansible Documentation](https://docs.ansible.com/)
-- [Jenkins Documentation](https://www.jenkins.io/doc/)
-- [Docker Documentation](https://docs.docker.com/)
-- [SonarQube Documentation](https://docs.sonarqube.org/)
+- [Jenkins Plugin Index](https://plugins.jenkins.io/)
+- [Jenkins Documentation - Managing Tools](https://www.jenkins.io/doc/book/managing/tools/)
+- [Maven Documentation](https://maven.apache.org/guides/)
+- [Eclipse Adoptium](https://adoptium.net/)
+- [SonarQube Scanner Documentation](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/)
 
 ---
 
-## 🔧 Prerequisites for This Project
+## 🔧 Current Infrastructure
 
-- AWS Account with billing enabled
-- Basic Linux command line knowledge
-- Understanding of Git and GitHub
-- Patience and willingness to learn!
+### Active AWS Resources:
+- **Jenkins Server**: t2.medium, 15GB, Ubuntu (Port 8080)
+- **SonarQube Server**: t2.medium, 20GB, Ubuntu, Docker container (Port 9000)
+- **Nexus Server**: t2.medium, 20GB, Ubuntu, Docker container (Port 8081)
+- **Ansible Server**: t2.medium, 8GB, Ubuntu
+- **Total EC2 Instances**: 4 instances running
 
----
-
-## 👨‍💻 About This Project
-
-This is a hands-on learning project to understand real-world DevOps practices. Each phase builds upon the previous one, creating a complete CI/CD pipeline from scratch.
-
-**Project Timeline:**
-- Started: [12/12/2025]
-- Phase 5 Completed: [17/12/2025]
-- Expected Completion: [20/12/2025]
+### Tools Configured:
+- **Java**: OpenJDK 17 (Temurin distribution)
+- **Maven**: Version 3.9.x (latest stable)
+- **SonarQube Scanner**: Latest from Maven Central
+- **Jenkins Plugins**: 3 additional plugins installed
 
 ---
 
-## 📧 Progress Updates
+## 📊 Project Progress Metrics
 
-Follow my journey as I complete each phase. Will update this README with screenshots, learnings, and challenges faced.
+**Overall Progress**: 6/25 Phases Complete (24%)
 
-**Current Focus**: Moving to Phase 6 - Jenkins Plugin Configuration
+**Time Invested**: 
+- Phase 1: Infrastructure setup
+- Phase 2: Ansible automation
+- Phase 3: SonarQube setup
+- Phase 4: Nexus repository
+- Phase 5: Jenkins installation
+- Phase 6: Tools configuration ← Current
+
+**Estimated Completion**: Continuing with Phase 7 next
+
+---
+
+## 💻 Tool Reference for Future Phases
+
+When creating Jenkins pipelines, use these exact tool names:
+
+```groovy
+tools {
+    jdk 'jdk-17'           // Java Development Kit
+    maven 'maven'          // Maven build tool
+}
+```
+
+For SonarQube Scanner, reference: `sonarqube-scanner`
 
 ---
 
 ## 🙏 Acknowledgments
 
-Thanks to the DevOps community for excellent documentation and tutorials that make learning accessible for beginners.
+Thanks to the Jenkins community for comprehensive plugin documentation and the Adoptium project for providing reliable OpenJDK distributions.
 
----
-
-*Last Updated: [Today's Date]*
-*Status: 5/25 Phases Complete (20% Complete)*
+ 

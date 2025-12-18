@@ -747,8 +747,6 @@ pipeline {
 
 ```
 
----
-
 ## 📚 Resources Used
 
 - [Docker Official Documentation](https://docs.docker.com/)

@@ -287,10 +287,7 @@ kubectl apply -f deployment.yaml   # Deploy applications
 ### Screenshot 3: DockerHub Repository with Images
 ![DockerHub Images](screenshots/phase16-dockerhub-images.png)
 *DockerHub repository showing boardgame images with latest and versioned tags*
-
-### Screenshot 4: EKS Tools Installed
-![EKS Tools Verification](screenshots/phase17-eks-tools-installed.png)
-*Terminal showing aws-cli, eksctl, and kubectl versions installed*
+ 
 
 ### Screenshot 5: Kubernetes Cluster Nodes Ready
 ![EKS Cluster Nodes](screenshots/phase18-eks-cluster-ready.png)

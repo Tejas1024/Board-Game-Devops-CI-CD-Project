@@ -32,27 +32,7 @@ This project showcases a **production-ready CI/CD pipeline** for a Java Spring B
 
 ## 📸 Visual Journey (Screenshots)
 
-### Phase 1-2: Infrastructure Setup
-
-**Terraform Infrastructure Provisioning**
-![Terraform Apply](screenshots/phase1-terraform-apply.png)
-*Automated EC2 instance creation with Terraform*
-
-**Ansible Docker Installation**
-![Ansible Success](screenshots/phase2-ansible-success.png)
-*Automated Docker installation across multiple servers*
-
----
-
-### Phase 3-6: Tool Configuration
-
-**SonarQube Dashboard**
-![SonarQube Setup](screenshots/phase3-sonarqube-dashboard.png)
-*Code quality analysis server ready*
-
-**Nexus Repository Manager**
-![Nexus Dashboard](screenshots/phase4-nexus-dashboard.png)
-*Artifact repository for Maven builds*
+ 
 
 **Jenkins Installation**
 ![Jenkins Dashboard](screenshots/phase5-jenkins-dashboard.png)

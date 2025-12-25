@@ -33,11 +33,7 @@ This project showcases a **production-ready CI/CD pipeline** for a Java Spring B
 ## 📸 Visual Journey (Screenshots)
 
  
-
-**Jenkins Installation**
-![Jenkins Dashboard](screenshots/phase5-jenkins-dashboard.png)
-*CI/CD automation server operational*
-
+ 
 **Jenkins Tools Configuration**
 ![Tools Configuration](screenshots/phase6-tools-configured.png)
 *JDK 17, Maven, and SonarQube Scanner configured*

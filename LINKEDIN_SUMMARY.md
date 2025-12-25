@@ -4,9 +4,8 @@
 Built a production-ready CI/CD pipeline automating the complete software delivery lifecycle from code commit to Kubernetes deployment with comprehensive monitoring.
 
  A Complete DevOps CI/CD Pipeline! 🚀
-
-Over 15 days, I built a production-grade pipeline from scratch demonstrating:
-
+ 
+ 
 ✅ Infrastructure as Code (Terraform)
 ✅ Configuration Management (Ansible)
 ✅ 13-Stage Automated Pipeline (Jenkins)

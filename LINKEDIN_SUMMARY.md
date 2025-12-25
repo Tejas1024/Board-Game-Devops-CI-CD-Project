@@ -3,9 +3,7 @@
 ## 🎯 One-Line Description
 Built a production-ready CI/CD pipeline automating the complete software delivery lifecycle from code commit to Kubernetes deployment with comprehensive monitoring.
 
-## 📋 LinkedIn Post Template
-
-I'm excited to share my latest project: A Complete DevOps CI/CD Pipeline! 🚀
+ A Complete DevOps CI/CD Pipeline! 🚀
 
 Over 15 days, I built a production-grade pipeline from scratch demonstrating:
 

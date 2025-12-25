@@ -5,7 +5,7 @@
 [![Kubernetes](https://img.shields.io/badge/Deployment-Kubernetes-326CE5?logo=kubernetes)](https://github.com/Tejas1024/Boardgame)
 [![Docker](https://img.shields.io/badge/Docker-Available-2496ED?logo=docker)](https://hub.docker.com/r/tejas1024/boardgame)
 
-> **A complete end-to-end DevOps CI/CD pipeline built from scratch by a beginner, demonstrating production-grade practices with AWS, Jenkins, Docker, Kubernetes, and comprehensive monitoring.**
+> **A complete end-to-end DevOps CI/CD pipeline built from scratch, demonstrating production-grade practices with AWS, Jenkins, Docker, Kubernetes, and comprehensive monitoring.**
 
 ---
 

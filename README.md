@@ -13,7 +13,7 @@
 
 **Real-world scenario:** A team needs to deploy code changes 10x/day with zero downtime, comprehensive security scanning, and full observability. This pipeline makes it possible.
 
-**Built from scratch, demonstrating:
+**Built from scratch, demonstrating:**
 - How to go from manual deployments to fully automated CI/CD
 - Industry-standard DevOps practices used by companies like Netflix, Amazon, Uber
 - Production-grade security, monitoring, and deployment strategies

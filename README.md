@@ -29,6 +29,132 @@
 
 This project showcases a **production-ready CI/CD pipeline** for a Java Spring Boot Board Game application, implementing industry-standard DevOps practices from infrastructure provisioning to production deployment and monitoring.
 
+
+## 📸 Visual Journey (Screenshots)
+
+### Phase 1-2: Infrastructure Setup
+
+**Terraform Infrastructure Provisioning**
+![Terraform Apply](screenshots/phase1-terraform-apply.png)
+*Automated EC2 instance creation with Terraform*
+
+**Ansible Docker Installation**
+![Ansible Success](screenshots/phase2-ansible-success.png)
+*Automated Docker installation across multiple servers*
+
+---
+
+### Phase 3-6: Tool Configuration
+
+**SonarQube Dashboard**
+![SonarQube Setup](screenshots/phase3-sonarqube-dashboard.png)
+*Code quality analysis server ready*
+
+**Nexus Repository Manager**
+![Nexus Dashboard](screenshots/phase4-nexus-dashboard.png)
+*Artifact repository for Maven builds*
+
+**Jenkins Installation**
+![Jenkins Dashboard](screenshots/phase5-jenkins-dashboard.png)
+*CI/CD automation server operational*
+
+**Jenkins Tools Configuration**
+![Tools Configuration](screenshots/phase6-tools-configured.png)
+*JDK 17, Maven, and SonarQube Scanner configured*
+
+---
+
+### Phase 7-11: Pipeline Development
+
+**First 3-Stage Pipeline**
+![First Pipeline](screenshots/phase7-stage-view.png)
+*Clone → Compile → Test stages working*
+
+**SonarQube Integration**
+![SonarQube Analysis](screenshots/phase8-sonarqube-results.png)
+*Code quality metrics in SonarQube dashboard*
+
+**Trivy Security Scanning**
+![Trivy FS Report](screenshots/phase9-trivy-report.png)
+*Filesystem vulnerability scan report*
+
+**Maven Packaging**
+![Stage View Success](screenshots/phase10-stage-view-success.png)
+*JAR artifact successfully created*
+
+**Nexus Deployment**
+![Nexus Artifacts](screenshots/phase11-stage-view-nexus.png)
+*Artifacts uploaded to Nexus repository*
+
+---
+
+### Phase 14-16: Containerization
+
+**Docker Tool Configuration**
+![Docker Tool Setup](screenshots/phase14-docker-tool-config.png)
+*Docker configured in Jenkins*
+
+**Docker Pipeline Stages**
+![Docker Stages Success](screenshots/phase14-16-docker-stages-success.png)
+*Build → Scan → Push Docker images*
+
+**DockerHub Repository**
+![DockerHub Images](screenshots/phase16-dockerhub-images.png)
+*Multiple versioned images in DockerHub*
+
+---
+
+### Phase 17-20: Kubernetes Deployment
+
+**AWS CLI Configuration**
+![AWS CLI Config](screenshots/phase19-aws-cli-config.png)
+*AWS tools configured for EKS management*
+
+**Kubernetes Deployment YAML**
+![Deployment YAML](screenshots/phase20-deployment-yaml.png)
+*Kubernetes deployment configuration*
+
+**Pipeline with EKS Stage**
+![Pipeline EKS](screenshots/phase20-pipeline-eks-stage.png)
+*Complete pipeline with Kubernetes deployment*
+
+**All Stages Successful**
+![Stage View Complete](screenshots/phase20-stage-view-success.png)
+*13 stages completed successfully*
+
+**Application Running on EKS**
+![App Live](screenshots/phase20-app-running.png)
+*Board Game application accessible via LoadBalancer*
+
+---
+
+### Phase 21-25: Automation & Monitoring
+
+**GitHub Webhook Configuration**
+![GitHub Webhook](screenshots/phase21-github-webhook.png)
+*Automated build triggers on code push*
+
+**Prometheus Metrics**
+![Prometheus](screenshots/phase22-prometheus.png)
+*Time-series metrics collection*
+
+**Grafana Login**
+![Grafana Login](screenshots/phase22-grafana-login.png)
+*Monitoring dashboard interface*
+
+**Prometheus Targets**
+![Prometheus Targets](screenshots/phase24-prometheus-targets.png)
+*Application endpoints being monitored*
+
+**Grafana Dashboard**
+![Grafana Dashboard](screenshots/phase24-grafana-dashboard.png)
+*Real-time application metrics visualization*
+
+**Complete Production Pipeline**
+![Complete Pipeline](screenshots/phase25-complete-pipeline.png)
+*All 13 stages of production-ready pipeline*
+
+---
 ### 📊 Project Statistics
 
 | Metric | Value |
@@ -178,133 +304,6 @@ This project showcases a **production-ready CI/CD pipeline** for a Java Spring B
 
 **Total Pipeline Duration:** ~8-12 minutes
 
----
-
-## 📸 Visual Journey (Screenshots)
-
-### Phase 1-2: Infrastructure Setup
-
-**Terraform Infrastructure Provisioning**
-![Terraform Apply](screenshots/phase1-terraform-apply.png)
-*Automated EC2 instance creation with Terraform*
-
-**Ansible Docker Installation**
-![Ansible Success](screenshots/phase2-ansible-success.png)
-*Automated Docker installation across multiple servers*
-
----
-
-### Phase 3-6: Tool Configuration
-
-**SonarQube Dashboard**
-![SonarQube Setup](screenshots/phase3-sonarqube-dashboard.png)
-*Code quality analysis server ready*
-
-**Nexus Repository Manager**
-![Nexus Dashboard](screenshots/phase4-nexus-dashboard.png)
-*Artifact repository for Maven builds*
-
-**Jenkins Installation**
-![Jenkins Dashboard](screenshots/phase5-jenkins-dashboard.png)
-*CI/CD automation server operational*
-
-**Jenkins Tools Configuration**
-![Tools Configuration](screenshots/phase6-tools-configured.png)
-*JDK 17, Maven, and SonarQube Scanner configured*
-
----
-
-### Phase 7-11: Pipeline Development
-
-**First 3-Stage Pipeline**
-![First Pipeline](screenshots/phase7-stage-view.png)
-*Clone → Compile → Test stages working*
-
-**SonarQube Integration**
-![SonarQube Analysis](screenshots/phase8-sonarqube-results.png)
-*Code quality metrics in SonarQube dashboard*
-
-**Trivy Security Scanning**
-![Trivy FS Report](screenshots/phase9-trivy-report.png)
-*Filesystem vulnerability scan report*
-
-**Maven Packaging**
-![Stage View Success](screenshots/phase10-stage-view-success.png)
-*JAR artifact successfully created*
-
-**Nexus Deployment**
-![Nexus Artifacts](screenshots/phase11-stage-view-nexus.png)
-*Artifacts uploaded to Nexus repository*
-
----
-
-### Phase 14-16: Containerization
-
-**Docker Tool Configuration**
-![Docker Tool Setup](screenshots/phase14-docker-tool-config.png)
-*Docker configured in Jenkins*
-
-**Docker Pipeline Stages**
-![Docker Stages Success](screenshots/phase14-16-docker-stages-success.png)
-*Build → Scan → Push Docker images*
-
-**DockerHub Repository**
-![DockerHub Images](screenshots/phase16-dockerhub-images.png)
-*Multiple versioned images in DockerHub*
-
----
-
-### Phase 17-20: Kubernetes Deployment
-
-**AWS CLI Configuration**
-![AWS CLI Config](screenshots/phase19-aws-cli-config.png)
-*AWS tools configured for EKS management*
-
-**Kubernetes Deployment YAML**
-![Deployment YAML](screenshots/phase20-deployment-yaml.png)
-*Kubernetes deployment configuration*
-
-**Pipeline with EKS Stage**
-![Pipeline EKS](screenshots/phase20-pipeline-eks-stage.png)
-*Complete pipeline with Kubernetes deployment*
-
-**All Stages Successful**
-![Stage View Complete](screenshots/phase20-stage-view-success.png)
-*13 stages completed successfully*
-
-**Application Running on EKS**
-![App Live](screenshots/phase20-app-running.png)
-*Board Game application accessible via LoadBalancer*
-
----
-
-### Phase 21-25: Automation & Monitoring
-
-**GitHub Webhook Configuration**
-![GitHub Webhook](screenshots/phase21-github-webhook.png)
-*Automated build triggers on code push*
-
-**Prometheus Metrics**
-![Prometheus](screenshots/phase22-prometheus.png)
-*Time-series metrics collection*
-
-**Grafana Login**
-![Grafana Login](screenshots/phase22-grafana-login.png)
-*Monitoring dashboard interface*
-
-**Prometheus Targets**
-![Prometheus Targets](screenshots/phase24-prometheus-targets.png)
-*Application endpoints being monitored*
-
-**Grafana Dashboard**
-![Grafana Dashboard](screenshots/phase24-grafana-dashboard.png)
-*Real-time application metrics visualization*
-
-**Complete Production Pipeline**
-![Complete Pipeline](screenshots/phase25-complete-pipeline.png)
-*All 13 stages of production-ready pipeline*
-
----
 
 ## ✨ Key Features
 

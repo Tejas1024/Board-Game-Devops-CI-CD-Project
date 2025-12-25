@@ -75,9 +75,5 @@ Documentation is everything. Every error I faced (and solved) is now documented 
 
 Tech used: AWS, Kubernetes, Docker, Jenkins, Terraform, Ansible, and 9 more tools.
 
-Want to see the architecture, code, and step-by-step guide?
-Link in comments 👇
 
-What was your first DevOps "aha!" moment?
 
-#DevOps #LearningInPublic #CloudComputing #CareerGrowth #TechJourney
